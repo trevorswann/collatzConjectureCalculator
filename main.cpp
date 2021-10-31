@@ -1,4 +1,3 @@
-#include <iostream>
 #include "collatzConjecture.h"
 
 int main() {

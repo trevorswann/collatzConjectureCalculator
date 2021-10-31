@@ -173,5 +173,3 @@ int collatzConjecture::mathOnOdd(int x) {
     //std::cout << "Running mathOnOdd for " << x << std::endl;
     return (x * 3) + 1;
 }
-
-#include "collatzConjecture.h"
