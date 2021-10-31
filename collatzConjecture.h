@@ -14,12 +14,12 @@ class collatzConjecture
 public:
     collatzConjecture();
     ~collatzConjecture() = default;
-    void runCollatzOnNum();             //func for running collatz conjecture on one specific num
-    void runCollatzOnRange();           //func for running collatz conjecture on range from 1 to n
 
 private:
-    int mathOnEven(int x);
-    int mathOnOdd(int x);
+    void runCollatzOnNum();             //func for running collatz conjecture on one specific num
+    void runCollatzOnRange();           //func for running collatz conjecture on range from 1 to n
+    int mathOnEven(int x);              //func for what to do on even #
+    int mathOnOdd(int x);               //func for what to do on odd #
 
     //vars for running collatz on range from 1 to n
     int mostJumpsOverall = 0;
@@ -27,6 +27,7 @@ private:
     int highestNumReachedOverall = 1;
     int numWithHighestNumReachedOverall = 1;
 
+    //vars for calculating execution time
     int64_t startTime;
     int64_t endTime;
     int64_t totalTime;
